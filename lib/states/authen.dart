@@ -7,6 +7,8 @@ import 'package:rutsproj/widgets/widget_text.dart';
 class Authen extends StatelessWidget {
   const Authen({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
