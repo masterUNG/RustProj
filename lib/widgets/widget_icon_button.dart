@@ -2,21 +2,22 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
-class WidgetButton extends StatelessWidget {
-  const WidgetButton({
+class WidgetIconButton extends StatelessWidget {
+  const WidgetIconButton({
     Key? key,
-    required this.text,
+    required this.iconData,
     required this.pressFunc,
   }) : super(key: key);
 
-  final String text;
+  final IconData iconData;
   final Function() pressFunc;
 
   @override
   Widget build(BuildContext context) {
-    return GFButton(
+    return GFIconButton(
+      icon: Icon(iconData),
       onPressed: pressFunc,
-      text: text,
+      type: GFButtonType.transparent,
     );
   }
 }
