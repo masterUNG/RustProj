@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:rutsproj/utility/app_constant.dart';
+
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class UserModel {
 
@@ -89,7 +91,7 @@ class UserModel {
       chiefname: (map['chiefname'] ?? '') as String,
       chieffaccode: (map['chieffaccode'] ?? '') as String,
       chieffacname: (map['chieffacname'] ?? '') as String,
-      token: (map['token'] ?? '') as String,
+      token: (map['token'] ?? AppConstant.testToken) as String,
     );
   }
 
